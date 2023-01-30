@@ -1,0 +1,43 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+.container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.leafBackground {
+  background-image: url(./leaf.avif);
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.odinLogo {
+  margin-top: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: aliceblue;
+  font-size: 50px;
+  font-weight: bold;
+}
+
+#credit {
+  color: aliceblue;
+  font-size: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 90%;
+}
+
+#odin {
+  height: 200px;
+}
+.signUpFormContainer {
+  grid-column: 2 / span 2;
+}
