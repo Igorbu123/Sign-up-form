@@ -21,13 +21,13 @@ body {
   justify-content: center;
   align-items: center;
   background-color: rgba(0, 0, 0, 0.5);
-  color: aliceblue;
+  color: whitesmoke;
   font-size: 50px;
   font-weight: bold;
 }
 
 #credit {
-  color: aliceblue;
+  color: whitesmoke;
   font-size: 20px;
   display: flex;
   flex-direction: column;
@@ -62,6 +62,7 @@ body {
 .signUpFormContainer {
   grid-column: 2 / span 2;
 }
+
 .signUpForm {
   font-size: 25px;
 }
@@ -87,6 +88,10 @@ body {
   border: 3px solid rgb(73, 141, 219);
 }
 
+.inputInfo:invalid {
+  border-color: red;
+}
+
 #form {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -97,11 +102,45 @@ body {
 
 .lowerPart {
   display: flex;
-  align-content: center;
+  flex-direction: column;
+  height: 41vh;
+  justify-content: start;
+  align-items: flex-start;
   background-color: rgba(0, 0, 0, 0.05);
 }
 
 legend {
   font-size: 40px;
   padding-bottom: 25px;
+}
+
+#createAccBtn {
+  font-size: 30px;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  margin-top: 30px;
+  margin-left: 50px;
+  border-radius: 6px;
+  border-style: solid;
+  background-color: #596d48;
+  color: whitesmoke;
+}
+
+#createAccBtn:hover {
+  cursor: pointer;
+}
+
+.loginText {
+  margin-left: 50px;
+}
+
+.loginLink {
+  margin-left: 10px;
+  color: #596d48;
+}
+
+.loginLink:hover {
+  cursor: pointer;
 }
