@@ -36,8 +36,8 @@
                 <input
                   class="inputInfo"
                   type="text"
-                  min="2"
-                  max="12"
+                  minlength="2"
+                  maxlength="12"
                   name="userFirstName"
                   id="userFirstName"
                 />
@@ -48,8 +48,8 @@
                 <input
                   class="inputInfo"
                   type="text"
-                  min="2"
-                  max="12"
+                  minlength="2"
+                  maxlength="12"
                   name="userLastName"
                   id="userLastName"
                 />
@@ -60,8 +60,6 @@
                 <input
                   class="inputInfo"
                   type="email"
-                  min="6"
-                  max="20"
                   name="userEmail"
                   id="userEmail"
                 />
@@ -72,40 +70,42 @@
                 <input
                   class="inputInfo"
                   type="number"
-                  min="6"
-                  max="12"
                   name="userPhoneNum"
                   id="userPhoneNum"
                 />
                 <label for="userPhoneNum">PHONE NUMBER</label>
               </div>
 
-              <div class="inputLine">
+              <div class="inputLine" id="passwordInput">
                 <input
                   class="inputInfo"
                   type="password"
-                  min="6"
-                  max="20"
+                  minlength="6"
+                  maxlength="20"
                   name="userPassword"
                   id="userPassword"
                 />
                 <label for="userPassword">PASSWORD</label>
               </div>
 
-              <div class="inputLine">
+              <div class="inputLine" id="passwordInput">
                 <input
                   class="inputInfo"
                   type="password"
-                  min="6"
-                  max="20"
-                  name="userPassword"
-                  id="userPassword"
+                  minlength="6"
+                  maxlength="20"
+                  name="userPasswordCheck"
+                  id="userPasswordCheck"
                 />
-                <label for="userPassword">CONFIRM PASSWORD</label>
+                <label for="userPasswordCheck">CONFIRM PASSWORD</label>
               </div>
             </fieldset>
             <div class="lowerPart">
-              <button type="submit">Create Account</button>
+              <button id="createAccBtn" type="submit">Create Account</button>
+
+              <p class="loginText">
+                Already have an account? <a class="loginLink">Log in</a>
+              </p>
             </div>
           </form>
         </div>
